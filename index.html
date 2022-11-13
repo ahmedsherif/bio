@@ -1,126 +1,496 @@
-<!-- =^..^= Created by JZimz. Learn more at jzimz.com -->
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Ahmed Sherif - Red Team Operation Lead</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Roboto Slab', serif;
-        font-weight: 300;
-        color: #0d0f11;
-      }
-      strong {
-        font-weight: 600;
-      }
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+    	<!-- meta charec set -->
+        <meta charset="utf-8">
+		<!-- Always force latest IE rendering engine or request Chrome Frame -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!-- Page Title -->
+        <title>Ahmed Sherif | Red Team Operation Lead</title>		
+		<!-- Meta Description -->
+        <meta name="description" content="Red teaming, hacking, CVE, 0days, bugbounty">
+        <meta name="keywords" content="Red teaming, hacking, CVE, 0days, bugbounty">
+        <meta name="author" content="Red teaming, hacking, CVE, 0days, bugbounty">
+		<!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Google Font -->
+		
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-      #page-home {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 60px;
-      }
+		<!-- CSS
+		================================================== -->
+		<!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		<!-- Twitter Bootstrap css -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<!-- jquery.fancybox  -->
+        <link rel="stylesheet" href="assets/css/jquery.fancybox.css">
+		<!-- animate -->
+        <link rel="stylesheet" href="assets/css/animate.css">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="assets/css/main.css">
+		<!-- media-queries -->
+        <link rel="stylesheet" href="assets/css/media-queries.css">
 
-      .profile-photo {
-        width: 130px;
-        height: 130px;
-        background-color: white;
-        border-radius: 50%;
-        background-repeat: no-repeat;
-        background-image: url('assets/profile.jpg');
-        background-size: 118%;
-        background-position: 70% 28%
-      }
-      .profile-photo:hover {
-        background-image: url('assets/profile-alt.jpeg');
-        background-size: 100%;
-      }
+		<!-- Modernizer Script for old Browsers -->
+        <script src="assets/js/modernizr-2.6.2.min.js"></script>
 
-      .profile-text h1 {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 900;
-        margin-top: 0.5em;
-        font-size: 2em;
-        text-align: center;
-      }
+    </head>
+	
+    <body id="body">
+	
+		<!-- preloader -->
+		<div id="preloader">
+			<img src="assets/img/preloader.gif" alt="Preloader">
+		</div>
+		<!-- end preloader -->
 
-      .page-body {
-        padding: 0 20px;
-        max-width: 520px;
-      }
+        <!-- 
+        Fixed Navigation
+        ==================================== -->
+        <header id="navigation" class="navbar-fixed-top navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars fa-2x"></i>
+                    </button>
+					<!-- /responsive nav button -->
+					
+					<!-- logo -->
+                    <a class="navbar-brand" href="#body">
+						<h1 id="logo">
+							<img src="assets/img/logo.png" alt="Brandi">
+						</h1>
+					</a>
+					<!-- /logo -->
+                </div>
 
-      .linkage {
-        font-family: 'Roboto', sans-serif;
-        margin-top: 40px;
-        text-align: center;
-        display: flex;
-        justify-content: space-evenly;
-      }
+				<!-- main nav -->
+                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                    <ul id="nav" class="nav navbar-nav">
+                        <li class="current"><a href="#body">Home</a></li>
+                        <li><a href="#team">About me</a></li>
+                        <li><a href="mailto:ahmed.sherif@owasp.org">Request a pentest</a></li>
+                        <!-- <li><a href="#team">Team</a></li>
+                        <li><a href="#">Contact</a></li> -->
+                    </ul>
+                </nav>
+				<!-- /main nav -->
+				
+            </div>
+        </header>
+        <!--
+        End Fixed Navigation
+        ==================================== -->
+		
+		
+		
+        <!--
+        Home Slider
+        ==================================== -->
+		
+		<section id="slider">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			
+				<!-- Indicators bullet -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				</ol>
+				<!-- End Indicators bullet -->				
+				
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					
+					<!-- single slide -->
+					<div class="item active" style="background-image: url(assets/img/banner.jpg);">
+						<div class="carousel-caption">
+							<h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated">Meet<span> Ahmed</span>!</h2>
+							<h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color">/connect</span> with 0x31337 hackers.</h3>
+							<p data-wow-duration="1000ms" class="wow slideInRight animated">a professional offensive security expert</p>
+							
+							<ul class="social-links text-center">
+								<li><a href="https://twitter.com/sherif_ninja"><i class="fa fa-twitter fa-lg"></i></a></li>
+								<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+								<li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+								<li><a href=""><i class="fa fa-dribbble fa-lg"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- end single slide -->
+					
+					<!-- single slide -->
+					<div class="item" style="background-image: url(assets/img/banner.jpg);">
+						<div class="carousel-caption">
+							<h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated">Meet<span> Ahmed</span>!</h2>
+							<h3 data-wow-duration="500ms" class="wow slideInLeft animated"><span class="color">/connect</span> with 0x31337 hackers.</h3>
+							<p data-wow-duration="500ms" class="wow slideInRight animated">a professional offensive security expert</p>
+							
+							<ul class="social-links text-center">
+								<li><a href="https://twitter.com/sherif_ninja"><i class="fa fa-twitter fa-lg"></i></a></li>
+								<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+								<li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+								<li><a href=""><i class="fa fa-dribbble fa-lg"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- end single slide -->
+					
+				</div>
+				<!-- End Wrapper for slides -->
+				
+			</div>
+		</section>
+		
+        <!--
+        End Home SliderEnd
+        ==================================== -->
+		
+        <!--
+        Features
+        ==================================== -->
+		
+		<section id="features" class="features">
+			<div class="container">
+				<div class="row">
+				
+					<div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
+						<h2>Services</h2>
+						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+					</div>
 
-      .linkage .link-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-decoration: none;
-        font-weight: 400;
-        color: #ebc2c2;
-      }
+					<!-- service item -->
+					<div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-bug fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Penetration testing</h3>
+								<p>A Penetration Test can identify security vulnerabilities before they are exploited, which can reduce total cost of ownership by preventing attacks that could be costly to repair.</p>
+							</div>
+						</div>
+					</div>
+					<!-- end service item -->
+					
+					<!-- service item -->
+					<div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-terminal fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Red teaming excercise</h3>
+								<p>Complex attacks search beyond cyber elements to find weak links to your crown-jewels; these links frequently go undetected by routine checks. Through scenario-based controlled incidents, "Red Team Operations" enables you to evaluate your organization's cyber readiness and awareness.								</p>
+							</div>
+						</div>
+					</div>
+					<!-- end service item -->
+					
+					<!-- service item -->
+					<div class="col-md-4 wow fadeInRight" data-wow-duration="500ms"  data-wow-delay="900ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-shield fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Breach and Attack simulation</h3>
+								<p>assess the rediness of your organization by emulating real-world TTPs and feed the result back to your blue team.</p>
+							</div>
+						</div>
+					</div>
+					<!-- end service item -->
+						
+				</div>
+			</div>
+		</section>
+		
+        <!--
+        End Features
+        ==================================== -->
+		
+		
+        <!--
+        Meet Our Team
+        ==================================== -->		
+		
+		<section id="team" class="team">
+			<div class="container">
+				<div class="row">
+		
+					<div class="sec-title text-center wow fadeInUp animated" data-wow-duration="700ms">
+						<h2>Meet Ahmed</h2>
+						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+					</div>
+					
+					<div class="sec-sub-title text-center wow fadeInRight animated" data-wow-duration="500ms">
+						<p>Ahmed Sherif is a professional offensive security expert based in the Netherlands with more than 8+ years of experience in the area of red teaming and penetration testing. Ahmed occupied the role of red teaming in serveral European and Middle eastern organizations, Ahmed has extensive knowledge in executing and coordinating global red team excercises based on the global regulatory frameworks (i.e. TIBER-EU, iCast). In his previous roles, Ahmed worked as a penetration tester to execute several tests on the level of infrastructure, and web applications. As result, he found different types of 0-days and published many articles.						</p>
+					</div>
 
-      .linkage .icon {
-        height: 90px;
-        width: 90px;
-        border-radius: 50%;
-        margin-bottom: 10px;
-        background-color: #0d0f11;
-      }
+					<!-- single member -->
+					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
+						<div class="member-thumb">
+							<img src="assets/img/team/profile.jpg" alt="Team Member" class="img-responsive">
+							<figcaption class="overlay">
+								<h5>Ahmed Sherif </h5>
+								<p>Red Team Operation lead</p>
+								<ul class="social-links text-center">
+									<li><a href="https://twitter.com/sherif_ninja"><i class="fa fa-twitter fa-lg"></i></a></li>
+									<li><a href="https://www.linkedin.com/in/ahmedsherif/"><i class="fa fa-linkedin fa-lg"></i></a></li>
+									<li><a href="https://medium.com/@sherif_ninja"><i class="fa fa-medium fa-lg"></i></a></li>
+								</ul>
+							</figcaption>
+						</div>
+						<h4>Ahmed Sherif</h4>
+						<span>Red Team Operation Lead</span>
+					</figure>
+					<!-- end single member -->
+					
+					<!-- single member -->
+					
+					<!-- end single member -->
+					
+					<!-- single member -->
+					
+					<!-- end single member -->
+					
+					<!-- single member -->
+					
+					<!-- end single member -->
+					
+				</div>
+			</div>
+		</section>
+		
+        <!--
+        End Meet Our Team
+        ==================================== -->
+		
+		<!--
+        Some fun facts
+        ==================================== -->		
+		
+		<section id="facts" class="facts">
+			<div class="parallax-overlay">
+				<div class="container">
+					<div class="row number-counters">
+						
+						<div class="sec-title text-center mb50 wow rubberBand animated" data-wow-duration="1000ms">
+							<h2>Work achieved</h2>
+							<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+						</div>
+						
+						<!-- first count item -->
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
+							<div class="counters-item">
+								<i class="fa fa-clock-o fa-3x"></i>
+								<strong data-to="6400">0</strong>
+								<!-- Set Your Number here. i,e. data-to="56" -->
+								<p>Hours of Work</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+							<div class="counters-item">
+								<i class="fa fa-users fa-3x"></i>
+								<strong data-to="83">0</strong>
+								
+								<p>Satisfied Clients</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
+							<div class="counters-item">
+								<i class="fa fa-rocket fa-3x"></i>
+								<strong data-to="420">0</strong>
+								<!-- Set Your Number here. i,e. data-to="56" -->
+								<p> Projects Delivered </p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
+							<div class="counters-item">
+								<i class="fa fa-trophy fa-3x"></i>
+								<strong data-to="12">0</strong>
+								<!-- Set Your Number here. i,e. data-to="56" -->
+								<p>CVEs and ndays found</p>
+							</div>
+						</div>
+						<!-- end first count item -->
+				
+					</div>
+				</div>
+			</div>
+		</section>
+		
+        <!--
+        End Some fun facts
+        ==================================== -->
+		
+		
+		
+		
+		<footer id="footer" class="footer">
+			<div class="container">
+				<div class="row">
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
+						<div class="footer-single">
+							<img src="assets/img/logo.png" alt="">
+							<p>All projects requested are subject to European VAT taxes included in the invoice. VAT Number: NL003602810B40 </p>
+						</div>
+					</div>
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+						<div class="footer-single">
+							<h6>Subscribe </h6>
+							<form action="#" class="subscribe">
+								<input type="text" name="subscribe" id="subscribe">
+								<input type="submit" value="&#8594;" id="subs">
+							</form>
+							<p>Copyright reserved </p>
+						</div>
+					</div>
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
+						<div class="footer-single">
+							<h6>Explore</h6>
+							<ul>
+								<li><a href="#">Inside Us</a></li>
+								<li><a href="#">Flickr</a></li>
+								<li><a href="#">Google</a></li>
+								<li><a href="#">Forum</a></li>
+							</ul>
+						</div>
+					</div>
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
+						<div class="footer-single">
+							<h6>Support</h6>
+							<ul>
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">Market Blog</a></li>
+								<li><a href="#">Help Center</a></li>
+								<li><a href="#">Pressroom</a></li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<p class="copyright text-center">
+							Copyright © 2015 <a href="https://themefisher.com/">Themefisher</a>. All rights reserved. Designed & developed by <a href="https://themefisher.com/">Themefisher</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<a href="javascript:void(0);" id="back-top"><i class="fa fa-angle-up fa-3x"></i></a>
 
-      @media screen and (max-width: 400px) {
-        .linkage .icon {
-          height: 64px;
-          width: 64px;
-        }
-      }
-
-    </style>
-  </head>
-  <body>
-    <div id="app">
-      <div id="page-home">
-        <div class="profile-photo"></div>
-        <div class="profile-text">
-          <h1>Ahmed Sherif</h1>
-        </div>
-        <div class="page-body">
-          <div class="about">
-            <strong>Ahmed Sherif</strong> is a professional offensive security expert with more than 8+ years of experience in the area of red teaming and penetration testing. 
-            Ahmed occupied the role of red teaming in serveral European and Middle eastern organizations, Ahmed has extensive knowledge in executing and coordinating global red team excercises based on the global regulatory frameworks (i.e. TIBER-EU, iCast).
-            In his previous roles, Ahmed worked as a penetration tester to execute several tests on the level of infrastructure, and web applications. As result, he found different types of 0-days and published many articles.
-          </div>
-          <div class="linkage">
-            <a href="https://www.linkedin.com/in/ahmedsherif/" class="link-item twitch">
-              <div class="icon" style="background-image: url(assets/linkedin.png);background-repeat: no-repeat;background-position: center; position: relative;"></div>
-              <div class="label">LinkedIn</div>
-            </a>
-            <a href="https://medium.com/@sherif_ninja" class="link-item discord">
-              <div class="icon" style="background-image: url(assets/medium.png);background-repeat: no-repeat;background-position: center; position: relative;"></div>
-              <div class="label">Medium</div>
-            </a>
-            <a href="mailto:ahmed.sherif@owasp.org"
-              class="link-item instagram">
-              <div class="icon" style="background-image: url(assets/gmail.png);background-repeat: no-repeat;background-position: center; position: relative;"></div>
-              <div class="label">Email</div>
-            </a>
-            <a href="https://twitter.com/sherif_ninja" class="link-item twitter">
-              <div class="icon" style="background-image: url(assets/twitter.png);background-repeat: no-repeat;background-position: center; position: relative;"></div>
-              <div class="label">Twitter</div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+		<!-- Essential jQuery Plugins
+		================================================== -->
+		<!-- Main jQuery -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+		<!-- Single Page Nav -->
+        <script src="assets/js/jquery.singlePageNav.min.js"></script>
+		<!-- Twitter Bootstrap -->
+        <script src="assets/js/bootstrap.min.js"></script>
+		<!-- jquery.fancybox.pack -->
+        <script src="assets/js/jquery.fancybox.pack.js"></script>
+		<!-- jquery.mixitup.min -->
+        <script src="assets/js/jquery.mixitup.min.js"></script>
+		<!-- jquery.parallax -->
+        <script src="assets/js/jquery.parallax-1.1.3.js"></script>
+		<!-- jquery.countTo -->
+        <script src="assets/js/jquery-countTo.js"></script>
+		<!-- jquery.appear -->
+        <script src="assets/js/jquery.appear.js"></script>
+		<!-- Contact form validation -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+		<!-- Google Map -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<!-- jquery easing -->
+        <script src="assets/js/jquery.easing.min.js"></script>
+		<!-- jquery easing -->
+        <script src="assets/js/wow.min.js"></script>
+		<script>
+			var wow = new WOW ({
+				boxClass:     'wow',      // animated element css class (default is wow)
+				animateClass: 'animated', // animation css class (default is animated)
+				offset:       120,          // distance to the element when triggering the animation (default is 0)
+				mobile:       false,       // trigger animations on mobile devices (default is true)
+				live:         true        // act on asynchronously loaded content (default is true)
+			  }
+			);
+			wow.init();
+		</script> 
+		<!-- Custom Functions -->
+        <script src="assets/js/custom.js"></script>
+		
+		<script type="text/javascript">
+			$(function(){
+				/* ========================================================================= */
+				/*	Contact Form
+				/* ========================================================================= */
+				
+				$('#contact-form').validate({
+					rules: {
+						name: {
+							required: true,
+							minlength: 2
+						},
+						email: {
+							required: true,
+							email: true
+						},
+						message: {
+							required: true
+						}
+					},
+					messages: {
+						name: {
+							required: "come on, you have a name don't you?",
+							minlength: "your name must consist of at least 2 characters"
+						},
+						email: {
+							required: "no email, no message"
+						},
+						message: {
+							required: "um...yea, you have to write something to send this form.",
+							minlength: "thats all? really?"
+						}
+					},
+					submitHandler: function(form) {
+						$(form).ajaxSubmit({
+							type:"POST",
+							data: $(form).serialize(),
+							url:"process.php",
+							success: function() {
+								$('#contact-form :input').attr('disabled', 'disabled');
+								$('#contact-form').fadeTo( "slow", 0.15, function() {
+									$(this).find(':input').attr('disabled', 'disabled');
+									$(this).find('label').css('cursor','default');
+									$('#success').fadeIn();
+								});
+							},
+							error: function() {
+								$('#contact-form').fadeTo( "slow", 0.15, function() {
+									$('#error').fadeIn();
+								});
+							}
+						});
+					}
+				});
+			});
+		</script>
+    </body>
 </html>

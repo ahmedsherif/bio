@@ -1,0 +1,126 @@
+<!-- =^..^= Created by JZimz. Learn more at jzimz.com -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Ahmed Sherif - Red Team Operation Lead</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Roboto Slab', serif;
+        font-weight: 300;
+        color: #0d0f11;
+      }
+      strong {
+        font-weight: 600;
+      }
+
+      #page-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+      }
+
+      .profile-photo {
+        width: 130px;
+        height: 130px;
+        background-color: white;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-image: url('assets/profile.jpg');
+        background-size: 118%;
+        background-position: 70% 28%
+      }
+      .profile-photo:hover {
+        background-image: url('assets/profile-alt.jpeg');
+        background-size: 100%;
+      }
+
+      .profile-text h1 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        margin-top: 0.5em;
+        font-size: 2em;
+        text-align: center;
+      }
+
+      .page-body {
+        padding: 0 20px;
+        max-width: 520px;
+      }
+
+      .linkage {
+        font-family: 'Roboto', sans-serif;
+        margin-top: 40px;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .linkage .link-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        font-weight: 400;
+        color: #ebc2c2;
+      }
+
+      .linkage .icon {
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        background-color: #0d0f11;
+      }
+
+      @media screen and (max-width: 400px) {
+        .linkage .icon {
+          height: 64px;
+          width: 64px;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div id="page-home">
+        <div class="profile-photo"></div>
+        <div class="profile-text">
+          <h1>Ahmed Sherif</h1>
+        </div>
+        <div class="page-body">
+          <div class="about">
+            <strong>Ahmed Sherif</strong> is a professional offensive security expert with more than 8+ years of experience in the area of red teaming and penetration testing. 
+            Ahmed occupied the role of red teaming in serveral European and Middle eastern organizations, Ahmed has extensive knowledge in executing and coordinating global red team excercises based on the global regulatory frameworks (i.e. TIBER-EU, iCast).
+            In his previous roles, Ahmed worked as a penetration tester to execute several tests on the level of infrastructure, and web applications. As result, he found different types of 0-days and published many articles.
+          </div>
+          <div class="linkage">
+            <a href="https://www.linkedin.com/in/ahmedsherif/" class="link-item twitch">
+              <div class="icon" style="background-image: url(assets/linkedin.png);background-repeat: no-repeat;background-position: center; position: relative;"></div>
+              <div class="label">LinkedIn</div>
+            </a>
+            <a href="https://medium.com/@sherif_ninja" class="link-item discord">
+              <div class="icon" style="background-image: url(assets/medium.png);background-repeat: no-repeat;background-position: center; position: relative;"></div>
+              <div class="label">Medium</div>
+            </a>
+            <a href="mailto:ahmed.sherif@owasp.org"
+              class="link-item instagram">
+              <div class="icon" style="background-image: url(assets/gmail.png);background-repeat: no-repeat;background-position: center; position: relative;"></div>
+              <div class="label">Email</div>
+            </a>
+            <a href="https://twitter.com/sherif_ninja" class="link-item twitter">
+              <div class="icon" style="background-image: url(assets/twitter.png);background-repeat: no-repeat;background-position: center; position: relative;"></div>
+              <div class="label">Twitter</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
